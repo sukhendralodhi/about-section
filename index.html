@@ -1,61 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About Section</title>
     <!-- tailwind css -->
-     <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body class="bg-gray-200">
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-200">
     <header class="w-full h-screen flex justify center items-center flex-col">
-        <!-- heading or text section start -->
-        <section class="text-center">
-            <h2 class="text-3xl font-bold pt-4">About</h2>
-            <p class="py-4 px-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborios</p>
+      <!-- heading or text section start -->
+      <section class="text-center">
+        <h2 class="text-3xl font-bold pt-4">About</h2>
+        <p class="py-4 px-4">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborios
+        </p>
+      </section>
+      <!-- heading or text section end -->
+      <!-- main section start -->
+      <main
+        class="flex flex-col items-center sm:justify-center px-0 mx-0 py-4 sm:flex-row sm:px-4 sm:items-start sm:py-0 px-4"
+      >
+        <!-- image section start -->
+        <section class="sm:w-3/6 w-full">
+          <img
+            class="w-full h-full rounded"
+            src="https://cdn.pixabay.com/photo/2020/08/30/09/28/buildings-5528981__340.jpg"
+            alt=""
+          />
         </section>
-        <!-- heading or text section end -->
-        <!-- main section start -->
-        <main class="flex flex-col items-center sm:justify-center px-0 mx-0 py-4 sm:flex-row sm:px-4 sm:items-start sm:py-0 px-4">
-            <!-- image section start -->
-            <section class="sm:w-3/6 w-full">
-                <img class="w-full  h-full rounded" src="https://cdn.pixabay.com/photo/2020/08/30/09/28/buildings-5528981__340.jpg" alt="">
-            </section>
-            <!-- image section end -->
-            <!-- button and other section  start-->
-            <section class="sm:w-3/6 w-full sm:px-4 text-left h-full text-center">
-                <!-- button section start  -->
-                <div class="flex pt-4 sm:py-0">
-                    <button class="text-center transition-all 0.3s ease-linear delay-100 duration-100 rounded w-full border-2 hover:bg-white hover:border-blue-400 px-4 py-2 sm:w-full">History</button>
-                    <button class="text-center transition-all 0.3s ease-linear delay-100 duration-100 rounded w-full border-2 hover:bg-white hover:border-blue-400 px-4 py-2 sm:w-full">Vision</button>
-                    <button class="text-center transition-all 0.3s ease-linear delay-100 duration-100 rounded w-full border-2 hover:bg-white hover:border-blue-400 px-4 py-2 sm:w-full">Goals</button>
-                </div>
-                <!-- button section end  -->
-                <!-- text section start -->
-                <div class="hidden">
-                    <h3>History</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae consequatur modi ad ipsa
-                        minima architecto ducimus fugit est? Explicabo, maxime?</p>
-                </div>
+        <!-- image section end -->
+        <!-- button and other section  start-->
+        <section class="sm:w-3/6 w-full sm:px-4 text-left h-full text-center">
+          <!-- button section start  -->
+          <div class="flex pt-4 sm:py-0">
+            <button
+              id="defaultOpen"
+              class="btn text-center transition-all 0.3s ease-linear delay-100 duration-100 rounded w-full border-2 hover:bg-white hover:border-blue-400 px-4 py-2 sm:w-full"
+            >
+              History
+            </button>
+            <button
+              class="btn text-center transition-all 0.3s ease-linear delay-100 duration-100 rounded w-full border-2 hover:bg-white hover:border-blue-400 px-4 py-2 sm:w-full"
+            >
+              Vision
+            </button>
+            <button
+              class="btn text-center transition-all 0.3s ease-linear delay-100 duration-100 rounded w-full border-2 hover:bg-white hover:border-blue-400 px-4 py-2 sm:w-full"
+            >
+              Goals
+            </button>
+          </div>
+          <!-- button section end  -->
+          <!-- text section start -->
+          <div class="box" id="History">
+            <h3 class="text-2xl font-bold mt-2">History</h3>
+            <p class="sm:px-0 mt-2 px-2">
+              Front-end development, also known as client-side development, has
+              a long and evolving history. Here are some key milestones in the
+              history of front-end development:
+              <br />
+              1. The early days of the web (1990s): In the early days of the
+              web, front-end development consisted of creating simple HTML pages
+              that could be displayed in web browsers. CSS (Cascading Style
+              Sheets) was introduced in 1996, allowing developers to separate
+              the presentation of a web page from its content.
+              <br />
+              2. The rise of JavaScript (late 1990s): In the late 1990s,
+              JavaScript emerged as a key front-end technology, allowing
+              developers to create dynamic, interactive web pages. This was also
+              the era of the first web frameworks, such as Backbone.js and
+              AngularJS.
+            </p>
+          </div>
 
-                <div class="hidden">
-                    <h3>Vision</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae consequatur modi ad ipsa
-                        minima architecto ducimus fugit est? Explicabo, maxime?</p>
-                </div>
+          <div class="box" id="Vision">
+            <h3 class="text-2xl font-bold mt-2">Vision</h3>
+            <p class="sm:px-0 mt-2 px-2">
+              1. Building engaging and intuitive user interfaces: One key
+              element of your vision might be to create interfaces that are
+              engaging and intuitive for users. This could involve incorporating
+              animations, microinteractions, and other design elements that help
+              users understand how to interact with your site or app.
+              <br />
+              2. Emphasizing accessibility and inclusivity: Another important
+              component of your vision might be to create interfaces that are
+              accessible and inclusive for all users. This could involve
+              following accessibility guidelines, using semantic HTML, and
+              testing your interfaces with assistive technology.
+              <br />
+              3. Staying up-to-date with new technologies: As a front-end
+              developer, you need to stay current with new technologies and
+              frameworks as they emerge. Your vision might include a commitment
+              to ongoing learning and professional development, whether through
+              attending conferences, taking online courses, or participating in
+              local meetups.
+            </p>
+          </div>
 
-                <div>
-                    <h3 class="text-2xl font-bold mt-2">Goals</h3>
-                    <p class="sm:px-0 mt-2 px-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae consequatur modi ad ipsa
-                        minima architecto ducimus fugit est? Explicabo, maxime?</p>
-                </div>
-                <!-- text section end -->
-            </section>
-            <!-- button and other section  end-->
-
-        </main>
-        <!-- main section end -->
+          <div class="box" id="Goals">
+            <h3 class="text-2xl font-bold mt-2">Goals</h3>
+            <p class="sm:px-0 mt-2 px-2">
+              1. Becoming proficient in a particular front-end technology: One
+              goal could be to become an expert in a particular front-end
+              technology, such as React, Vue, or Angular. This can involve
+              deepening your understanding of the technology, mastering its
+              features and best practices, and building a portfolio of projects
+              that demonstrate your skills. <br />
+              2. Building a strong design sense: Another goal might be to
+              develop a strong design sense, which can help you create visually
+              appealing and user-friendly interfaces. This can involve studying
+              design principles, working on your visual design skills, and
+              collaborating with designers to improve your designs. <br />
+              3. Creating accessible and inclusive user experiences: As a
+              front-end developer, you have the power to create interfaces that
+              are inclusive and accessible to a wide range of users. One goal
+              could be to become an expert in accessibility and inclusive
+              design, and to advocate for these principles in your work.
+            </p>
+          </div>
+          <!-- text section end -->
+        </section>
+        <!-- button and other section  end-->
+      </main>
+      <!-- main section end -->
     </header>
-</body>
+
+    <!-- JavaScript -->
+    <script src="app.js"></script>
+  </body>
 </html>
